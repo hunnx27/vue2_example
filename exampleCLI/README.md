@@ -1,10 +1,10 @@
-# example13
+# example13 - Vue2.X 설치 및 실행 방법
 
 ## 설치순서
 
 ### 1. 아래 명령으로 Vue 2.X 프로젝트 생성
 ```
- vue create {프로젝트명}
+ vue create exampleCLI
 ```
  옵션 선택시 아래와 같이 셋팅
    1. ? Please pick a preset: **Manually select features**
@@ -18,7 +18,7 @@
 
 ### 2. 아래 명령으로 서버 기동
 ```
-cd ./example13
+cd ./exampleCLI
 npm run serve
 ```
 
@@ -28,3 +28,11 @@ npm run serve
   - Local:   http://localhost:8081/
   - Network: http://192.168.150.171:8081/
 ```
+
+# example 14 - 뷰라우터
+## src/router/index.js
+- /* webpackChunkName: "about" */ 레이지 로딩시 해당 주석 앞에 입력 필요(페이지별 로딩, 설정 안할 경우 전체 페이지 선로딩)
+- ```<router-link to="/">Home</router-link>``` 로 라우터 링크 이동(빌드시 a 태그로 변경됨)
+- ```<router-view/>``` 라우터로 링크시 해당 태그에 연결된 컴포넌트가 로드됨
+## viwes/*
+- 진입점
