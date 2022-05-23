@@ -2,7 +2,9 @@
 ## 출처
 https://www.youtube.com/watch?v=gZBKGn0wQXU&list=PLB7CpjPWqHOtYP7P_0Ls9XNed0NLvmkAh
 코지코더 - Vuejs 2 기초익히기
+
 ## 목차
+### Vue2 기초 문법
 1. 개발환경 구성 및 맛보기
 2. 뷰 데이터(data) 및 메소드(methods)
 3. 데이터 바인딩(단방향)(v-bind)
@@ -15,6 +17,8 @@ https://www.youtube.com/watch?v=gZBKGn0wQXU&list=PLB7CpjPWqHOtYP7P_0Ls9XNed0NLvm
 10. v-for 리스트 렌더링
 11. 여러개의 Vue 인스턴스 사용하기
 12. Vue 컴포넌트
+
+### CLI 사용
 13. Vue Cli로 뷰 설치하기
 14. Vue 라우터
 15. 싱글 파일 컴포넌트
