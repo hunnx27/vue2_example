@@ -5,28 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <title>Vue Intro</title>
+    <title>Vue Example3</title>
 </head>
 <body>
     <div id="app">
-        <!--데이타 출력-->
-        <h1>Hello {{name}}</h1>
-
-        <!--데이타 바인딩-->
-        <input type="text" v-model="name">
-        <ul>
-            <!--데이타 반복문-->
-            <li v-for="framework in frameworks">{{framework}}</li>
-        </ul>
-        <div>{{frameworks}}</div>
+        <!--v-bind를 이용해 태그의 attribute에 매핑 가능(단방향)-->
+        <input v-bind:type="type" :value="inputData"><br/>
+        <!--v-bind가 되었지만 밸류 변경시 적용되지는 않음-->
+        >> {{inputData}}<br/>
+        <!-- 링크 연결-->
+        <a :href="link" target="_blank">네이버로 이동</a>
     </div>
     
     <script>
         const app = new Vue({
-            el: "#app",
+            el: "#app", 
             data:{
-                name: "scalper",
-                frameworks:["React","Vue","Anguler"],
+                // Object형식으로 데이터 리턴
+                person: {
+                    name: "scalper",
+                    year: 30
+                },
+                inputData: '999',
+                type: 'number',
+                link: 'https://www.naver.com',
+            },
+            // 함수는 method s 에 정의하면 html에서 사용이 가능하다.
+            methods:{
+                
             }
         })
     </script>
