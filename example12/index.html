@@ -31,11 +31,16 @@
     </div>
     
     <script>
+        // 컴포넌트 안 컴포넌트도 사용가능
+        Vue.component('hello-world', {
+            template: '<div>hello world</div>'
+        })
         // 컴포넌트를 전역변수로 선언
         Vue.component('kossie-button', {
             template: `
                     <div>
                         {{ name }}<br/>
+                        <hello-world/>
                         <button @click="changeText">Click</button>
                     </div>
                     `,
