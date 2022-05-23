@@ -1,4 +1,5 @@
-# 강좌 1
+# 강의 실습
+## 출처
 https://www.youtube.com/watch?v=gZBKGn0wQXU&list=PLB7CpjPWqHOtYP7P_0Ls9XNed0NLvmkAh
 코지코더 - Vuejs 2 기초익히기
 ## 목차
