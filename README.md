@@ -19,7 +19,7 @@ https://www.youtube.com/watch?v=gZBKGn0wQXU&list=PLB7CpjPWqHOtYP7P_0Ls9XNed0NLvm
 12. Vue 컴포넌트
 
 ### CLI 사용
-13. Vue Cli로 뷰 설치하기
+13. Vue Cli로 뷰 설치하기(방법)
 14. Vue 라우터
 15. 싱글 파일 컴포넌트
 16. 자식 컴포넌트에 데이터 보내기(Props)
