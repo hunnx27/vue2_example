@@ -10,7 +10,7 @@
 <body>
     <div id="app">
         <!--v-bind를 이용해 태그의 attribute에 매핑 가능(단방향)-->
-        <input v-bind:type="type" :value="inputData"><br/>
+        <input v-bind:type="type" v-bind:value="inputData"><br/>
         <!--v-bind가 되었지만 밸류 변경시 적용되지는 않음-->
         >> {{inputData}}<br/>
         <!-- 링크 연결-->

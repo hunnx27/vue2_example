@@ -14,10 +14,48 @@
     
     <script>
         
+        // **
+        // 컴포넌트를 전역변수를 지역변수로 변환
+        // **
+        // Vue.component('hello-world', {
+        //     template: '<div>hello world</div>'
+        // })
+
+        // Vue.component('kossie-button', {
+        //     template: `
+        //             <div>
+        //                 {{ name }}<br/>
+        //                 <hello-world/>
+        //                 <button @click="changeText">Click</button>
+        //             </div>
+        //             `,
+        //     data(){
+        //         return {
+        //             name: 'kosie'
+        //         }
+        //     },
+        //     methods:{
+        //         changeText(){
+        //             this.name = 'choijihoon updated'
+        //         }
+        //     },
+        // })
+
+        // >>>>>>>>>>>>>
+
+        // 전역변수의 object값을 변수로 저장(지역변수 전환을위함)
+        const HelloWorld = {
+            template: '<div>hello world</div>'
+        }
+        
         const KossieButton = {
+            components:{
+                'helloWorld': HelloWorld
+            },
             template: `
                     <div>
                         {{ name }}<br/>
+                        <hello-world/>
                         <button @click="changeText">Click</button>
                     </div>
                     `,
