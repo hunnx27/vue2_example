@@ -30,6 +30,7 @@
                     this.name = 'choijihoon updated'
                     // 아래 app1의 다른 Vue Instance로 접근이가능하다.
                     app1.name = 'choijihoon1 updated'
+                    app1.haha();
                 }
             },
         })
@@ -41,7 +42,10 @@
             },
             methods:{
                 changeText(){
-                    this.name = 'choijihoon2 updated'
+                    this.name = 'choijihoon2 updated';
+                },
+                haha(){
+                    alert('haha');
                 }
             },
         })
